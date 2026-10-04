@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Student Restaurants Finland</title>
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+</head>
+
+<body>
+
+  <header class="top">
+    <div class="container">
+
+      <h1>Student Food Finland</h1>
+
+      <p>
+        Find student restaurants and check their menus.
+      </p>
+
+    </div>
+  </header>
+
+
+  <main class="container">
+
+    <div class="search-box">
+
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Search restaurant..."
+      >
+
+      <select id="city-filter">
+        <option value="">
+          All cities
+        </option>
+      </select>
+
+      <select id="company-filter">
+        <option value="">
+          All providers
+        </option>
+      </select>
+
+      <label class="favorites-filter">
+
+        <input
+          type="checkbox"
+          id="favorites-only"
+        >
+
+        Show favorites only
+
+      </label>
+
+      <button id="nearest-button">
+        Find Nearest
+      </button>
+
+    </div>
+
+
+    <p
+      id="location-message"
+      class="location-message"
+    ></p>
+
+
+    <section class="content">
+
+      <div class="restaurants">
+
+        <h2>Restaurants</h2>
+
+        <div
+          id="restaurant-list"
+          class="restaurant-list"
+        >
+          <p>Loading restaurants...</p>
+        </div>
+
+      </div>
+
+
+      <div class="menu">
+
+        <h2>Menu</h2>
+
+        <div
+          id="restaurant-info"
+          class="restaurant-info"
+        >
+          <p>Select a restaurant.</p>
+        </div>
+
+
+        <div class="menu-links">
+
+          <button id="daily-button">
+            Daily Menu
+          </button>
+
+          <button id="weekly-button">
+            Weekly Menu
+          </button>
+
+        </div>
+
+
+        <div
+          id="menu-content"
+          class="food"
+        >
+          <p>
+            Select a restaurant to see the menu.
+          </p>
+        </div>
+
+
+        <div class="map-section">
+
+          <h2>Restaurant Map</h2>
+
+          <div id="map-container">
+
+            <p>
+              Select a restaurant to see its location.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>Student Food Finland</p>
+  </footer>
+
+
+  <script
+    type="module"
+    src="js/main.js"
+  ></script>
+
+</body>
+
+</html>
